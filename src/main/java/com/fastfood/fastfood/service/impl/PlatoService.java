@@ -1,4 +1,4 @@
-package com.fastfood.fastfood.service;
+package com.fastfood.fastfood.service.impl;
 
 import com.fastfood.fastfood.dao.PlatoRepository;
 import com.fastfood.fastfood.entity.Plato;
@@ -31,6 +31,12 @@ public class PlatoService {
 
     public Plato searchById(Integer id){
        return repoPlato.findById(id).orElse(null);
+    }
+
+    public void updateStock(int idPlato, int cantidad) {
+        Plato plato = this.searchById(idPlato);
+        plato.setCantidad(plato.getCantidad() - cantidad);
+        this.modificar(plato);
     }
 
 

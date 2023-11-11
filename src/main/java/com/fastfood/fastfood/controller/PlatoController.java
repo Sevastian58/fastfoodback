@@ -1,9 +1,8 @@
 package com.fastfood.fastfood.controller;
 
-import com.fastfood.fastfood.dao.FileUploadService;
 import com.fastfood.fastfood.entity.Plato;
-import com.fastfood.fastfood.service.FileUploadServiceImpl;
-import com.fastfood.fastfood.service.PlatoService;
+import com.fastfood.fastfood.service.impl.FileUploadServiceImpl;
+import com.fastfood.fastfood.service.impl.PlatoService;
 import com.google.gson.Gson;
 import org.apache.commons.io.FileUtils;
 import org.springframework.beans.factory.annotation.Autowired;

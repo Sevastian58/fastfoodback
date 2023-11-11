@@ -1,4 +1,4 @@
-package com.fastfood.fastfood.dao;
+package com.fastfood.fastfood.service;
 
 import java.io.InputStream;
 
