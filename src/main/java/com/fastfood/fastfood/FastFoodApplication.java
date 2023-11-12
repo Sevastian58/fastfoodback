@@ -17,7 +17,7 @@ public class FastFoodApplication implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("http://localhost:4200") // Cambia esto con la URL de tu aplicación Angular
+                .allowedOrigins("http://localhost:4200", "http://localhost:52329") // Cambia esto con la URL de tu aplicación Angular
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
                 .allowCredentials(true);

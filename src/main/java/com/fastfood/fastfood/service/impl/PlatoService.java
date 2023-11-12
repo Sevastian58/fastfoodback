@@ -22,6 +22,12 @@ public class PlatoService {
     }
 
     public Plato modificar(Plato p){
+
+       /* p.getListaDetalleCompra().forEach(detalleCompra -> detalleCompra.setPlato(p));
+
+        // Guardar la entidad modificada
+        repoPlato.save(p);*/
+
         return repoPlato.save(p);
     }
 

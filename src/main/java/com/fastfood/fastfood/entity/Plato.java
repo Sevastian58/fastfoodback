@@ -30,7 +30,7 @@ public class Plato {
 
 
     //llaves foraneas
-    @OneToMany(mappedBy = "plato", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "plato", cascade = CascadeType.ALL)
     @JsonIgnore
     private List<DetalleCompra> listaDetalleCompra;
 
